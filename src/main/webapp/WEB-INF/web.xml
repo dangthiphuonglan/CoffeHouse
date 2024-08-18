@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<display-name>Cafe_House</display-name>
+	<welcome-file-list>
+		<welcome-file>/login1.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndexController</servlet-name>
+		<servlet-class>controller.IndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexController</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InfoController</servlet-name>
+		<servlet-class>controller.InfoController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InfoController</servlet-name>
+		<url-pattern>/info</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>controller.RegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/sign</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>controller.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditUserController</servlet-name>
+		<servlet-class>controller.EditUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserController</servlet-name>
+		<url-pattern>/info/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelUserController</servlet-name>
+		<servlet-class>controller.DelUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelUserController</servlet-name>
+		<url-pattern>/info/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ForgetPassController</servlet-name>
+		<servlet-class>controller.ForgetPassController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgetPassController</servlet-name>
+		<url-pattern>/forget</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginForgetController</servlet-name>
+		<servlet-class>controller.LoginForgetController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginForgetController</servlet-name>
+		<url-pattern>/forget/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MenuController</servlet-name>
+		<servlet-class>controller.MenuController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MenuController</servlet-name>
+		<url-pattern>/menu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddMenuController</servlet-name>
+		<servlet-class>controller.AddMenuController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddMenuController</servlet-name>
+		<url-pattern>/menu/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddCatConroller</servlet-name>
+		<servlet-class>controller.AddCatConroller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCatConroller</servlet-name>
+		<url-pattern>/cat/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditController</servlet-name>
+		<servlet-class>controller.EditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditController</servlet-name>
+		<url-pattern>/menu/editmenu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelMenuController</servlet-name>
+		<servlet-class>controller.DelMenuController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelMenuController</servlet-name>
+		<url-pattern>/menu/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ContactController</servlet-name>
+		<servlet-class>controller.ContactController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactController</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MuaHangController</servlet-name>
+		<servlet-class>controller.MuaHangController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MuaHangController</servlet-name>
+		<url-pattern>/order</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListOrderController</servlet-name>
+		<servlet-class>controller.ListOrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListOrderController</servlet-name>
+		<url-pattern>/order/list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditListOrderController</servlet-name>
+		<servlet-class>controller.EditListOrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditListOrderController</servlet-name>
+		<url-pattern>/order/list/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GiohangController</servlet-name>
+		<servlet-class>controller.GiohangController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GiohangController</servlet-name>
+		<url-pattern>/admin/giohang</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicDatHangNhieuController</servlet-name>
+		<servlet-class>controller.PublicDatHangNhieuController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicDatHangNhieuController</servlet-name>
+		<url-pattern>/public/datnhieuhang</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicUpdateAdActive</servlet-name>
+		<servlet-class>controller.PublicUpdateAdActive</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicUpdateAdActive</servlet-name>
+		<url-pattern>/public/giohang/adactive</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicXacNhanGH</servlet-name>
+		<servlet-class>controller.PublicXacNhanGH</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicXacNhanGH</servlet-name>
+		<url-pattern>/public/giohang/xngh</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateListUser</servlet-name>
+		<servlet-class>controller.UpdateListUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateListUser</servlet-name>
+		<url-pattern>/admin/updateEmpl</url-pattern>
+	</servlet-mapping>
+</web-app>
